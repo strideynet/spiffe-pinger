@@ -1,6 +1,6 @@
 # spiffe-pinger
 
-Small utility for testing SPIFFE functionality.
+Small utility for testing SPIFFE-powered gRPC and mTLS.
 
 The service:
 
