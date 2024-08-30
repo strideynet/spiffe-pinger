@@ -10,6 +10,12 @@ The service:
 - Spins up a loop that pings a gRPC server using the X509 SVID as a client
   certificate
 
+It requires three environment variables be set:
+
+- `SPIFFE_ENDPOINT_SOCKET`: The path to the SPIFFE Workload API socket.
+- `LISTEN`: The address to listen on for incoming gRPC connections.
+- `TARGET`: The address to connect to for outgoing gRPC connections.
+
 Spin up two of these and point them at one another e.g
 
 ```shell
